@@ -67,28 +67,71 @@ body {
 			justify-content: space-around;
 			margin: 150px auto;
 			width: 100%;
-			.img-container {
-				width: 33%;
-				height: 500px;
+
+			@include for-phone-only {
+				flex-direction: column;
+				justify-content: center;
+				align-content: center;
+				text-align: center;
+				align-items: center;
+				margin: 25px auto;
 			}
-			.media-body {
-				border: 1px solid red;
-				width: 33%;
-				flex: none;
-
-				h2 {
-					font-weight: bold;
+			.footer-img {
+				@include for-phone-only {
+					display: none;
 				}
+				.img-container {
+					width: 33%;
+					height: 500px;
+					img {
+						height: 100%;
+						justify-content: center;
+						align-content: center;
+					}
+				}
+				.media-body {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
 
-				p {
-					font-weight: bold;
-					font-size: 1.4rem;
+					width: 33%;
+					flex: none;
+
+					@include for-phone-only {
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						align-content: center;
+					}
+					h1 {
+						font-weight: bold;
+						margin-bottom: 50px;
+					}
+
+					h2 {
+						margin-bottom: 50px;
+					}
+
+					p {
+						font-size: 1.4rem;
+					}
 				}
 			}
 		}
 		.card-container {
 			display: flex;
 			justify-content: space-around;
+
+			@include for-phone-only {
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+			}
+
+			.card {
+				margin-bottom: 40px;
+			}
 			img {
 				width: 100%;
 				height: 200px;
