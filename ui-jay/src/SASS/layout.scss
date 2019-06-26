@@ -1,0 +1,62 @@
+// Layout: contains all the CSS that handles the layout, such as the container and any grid systems.
+body {
+	.container-body {
+		max-width: 1100px;
+		margin: 0 auto;
+
+		.jumbotron {
+			display: flex;
+			flex-direction: column;
+			background: url('https://images.unsplash.com/photo-1534525461301-1d687bf9b5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60')
+				no-repeat center center;
+			-webkit-background-size: 100% 100%;
+			-moz-background-size: 100% 100%;
+			-o-background-size: 100% 100%;
+			background-size: 100% 100%;
+			color: white;
+			padding-top: 15px;
+			height: 450px;
+
+			nav {
+				display: flex;
+				width: 100%;
+				margin-bottom: 50px;
+
+				#navbar-collapse {
+					justify-content: space-between;
+					align-items: center;
+				}
+				ul {
+					list-style-type: none;
+
+					.brand {
+						color: white;
+						font-size: 2rem;
+						text-decoration: none;
+						mix-blend-mode: luminosity;
+						text-shadow: 2px 2px #695656;
+					}
+					.nav-link {
+						color: white;
+						font-size: 1.25rem;
+						margin: 0 0 15px 15px;
+						mix-blend-mode: luminosity;
+						text-shadow: 3px 3px #695656;
+					}
+				}
+			}
+
+			#jumbo-btn {
+				width: 20%;
+				height: 45px;
+				font-size: 20px;
+				background-color: rgb(226, 33, 33);
+				color: white;
+				text-shadow: 1px 1px #867c7c;
+			}
+			#jumbo-header {
+				text-shadow: 2px 2px #695656;
+			}
+		}
+	}
+}
