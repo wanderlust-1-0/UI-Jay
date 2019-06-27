@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],[function(e,o,t){e.exports=t(1)},function(e,o,t){"use strict";t.r(o);t(2);var n=document.querySelectorAll("a");n.forEach(function(e){e.addEventListener("mouseover",function(e){e.target.style.color="yellow",e.target.style.border="1px dashed black"})}),document.getElementById("jumbo-btn").style.color="1px dashed yellow",console.log(n)},function(e,o,t){}],[[0,1]]]);
+//# sourceMappingURL=main.82decefb.chunk.js.map
