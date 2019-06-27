@@ -1,4 +1,4 @@
-import './index.scss'
+import './sass/index.scss'
 
 const alinks = document.querySelectorAll('a')
 
