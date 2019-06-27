@@ -12,3 +12,5 @@ alinks.forEach(link => {
 document.getElementById('jumbo-btn').style.color = '1px dashed yellow'
 
 console.log(alinks)
+
+//maybe add functionality to pictures of team below
